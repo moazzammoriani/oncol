@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Upload Reports — Oncology Solutions</title>
+<link rel="icon" type="image/png" href="assets/oncology-solutions-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="upload">
+
+<div id="site-header"></div>
+
+<section class="pbanner">
+  <div class="pbanner__bg"><img src="assets/telehealth-hands.webp" alt="" /></div>
+  <div class="wrap pbanner__inner">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span>Upload Reports</div>
+    <p class="eyebrow pbanner__ey"><span class="eyebrow__line"></span>Secure Upload</p>
+    <h1>Upload your medical records</h1>
+    <p class="pbanner__lead">Share your records securely through our platform — ensuring privacy, quick access, and fast case processing. Your information stays confidential and protected.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sdetail__grid">
+      <div class="upload reveal" data-rv>
+        <div class="dropzone" id="dropzone">
+          <span class="dropzone__ic" v-icon="upload"></span>
+          <h3>Drag &amp; drop your files here</h3>
+          <p>or click to browse — PDF, JPG, PNG, DICOM accepted</p>
+          <span class="btn btn--coral dropzone__btn">Choose files</span>
+          <input type="file" id="fileInput" multiple accept=".pdf,.jpg,.jpeg,.png,.dcm,.doc,.docx" hidden />
+        </div>
+        <ul class="filelist" id="fileList"></ul>
+        <div class="upload__note"><span v-icon="lock"></span> Files are handled confidentially and used only to prepare your review.</div>
+        <div style="margin-top:28px">
+          <a href="contact.html" class="btn btn--coral btn--lg">Continue to booking <span class="btn__arrow">→</span></a>
+        </div>
+      </div>
+
+      <aside class="sdetail__aside reveal" data-rv data-d="1">
+        <div class="price">
+          <span class="price__amt">Only $75</span>
+        </div>
+        <p class="price__per" style="margin-top:6px">30-minute session with an oncology expert</p>
+        <p style="margin:14px 0 18px">A focused, one-to-one session to review your situation and map out your next steps with clarity.</p>
+        <a href="contact.html" class="btn btn--coral btn--block">Get now <span class="btn__arrow">→</span></a>
+        <ul class="sdetail__who" style="margin-top:22px">
+          <li><span v-icon="check"></span> Physician-led review</li>
+          <li><span v-icon="check"></span> Plain-language answers</li>
+          <li><span v-icon="check"></span> Confidential &amp; secure</li>
+          <li><span v-icon="check"></span> Fast turnaround</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="partials.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
